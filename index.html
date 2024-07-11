@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  
+  body {
+      background-color: hsl(233, 47%, 7%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #quadro {
+      background-color: hsl(244, 38%, 16%);
+      width: 1200px;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      
+    }
+
+    .esquerda {
+      display: flex;
+      flex-direction: column;
+      padding: 55px 120px 55px 55px;
+      justify-content: space-around;
+      width: 40%;
+    }
+
+    .esquerda h1 {
+      color: hsl(0, 0%, 100%);
+      font-family: "Inter";
+      font-size: 30px;
+    }
+
+    span {
+      color: rgb(186, 145, 224);
+    }
+
+    .esquerda p {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: "Inter";
+      line-height: 30px;
+    }
+
+    .esquerda .lista ul {
+      display: flex;
+      justify-content: flex-start;
+      gap: 50px;
+      margin-left: -40px;
+    }
+
+    .esquerda .lista ul li{
+      display: flex;
+      flex-direction: column
+    }
+
+    .esquerda .lista .li h1 {
+      color: hsl(0, 0%, 100%);
+      
+    }
+    .esquerda .lista li p {
+      color: hsla(0, 0%, 100%, 0.6);
+      font-family: "Lexend Deca";
+      margin-top: -10px;
+    }
+
+    .direita {
+      background-color: hsl(277, 97%, 26%);
+      width: 60%;
+    }
+
+    .direita img {
+      height: 100%;
+      width: 100%;
+      filter: opacity(50%) ;
+    }
+
+    @media (max-width: 375px) {
+
+      body {
+      margin: 20px;        
+      }
+
+      #quadro {
+        width: 100%;
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .esquerda {
+        padding: 20px;
+        width: unset;
+      }
+
+      .esquerda .lista ul {
+        flex-direction: column;
+      }
+
+      .direita {
+        width: 100%;
+      }
+
+      .attribution {
+      display: flex;
+      flex-direction: column;
+      }
+
+    }
+
+  
+
+  </style>
+</head>
+<body>
+
+
+
+  <section id="quadro">
+
+    <div class="esquerda">
+
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+
+        <div class="lista">
+
+          <ul>
+          <li>
+            <h1>10k+ </h1>
+            <p>companies</p>
+          </li>
+          <li>
+            <h1>314 </h1>
+            <p>templates</p>
+          </li>
+          <li>
+            <h1>12m+</h1>
+            <p>queries</p>
+          </ul>
+
+        </div>
+
+    </div>
+
+    <div class="direita">
+
+      <picture>
+
+      <source media="(min-width: 375px)" srcset="/stats-preview-card-component-main/stats-preview-card-component-main/images/image-header-mobile.jpg">  
+      <img src="/stats-preview-card-component-main/stats-preview-card-component-main/images/image-header-desktop.jpg" alt="">
+
+      </picture>
+
+    </div>
+
+  </section>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mansour Mansour</a>.
+  </div>
+</body>
+</html>
